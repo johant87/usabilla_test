@@ -74,6 +74,8 @@ input{
   display: block;
   border-bottom: solid 3px transparent;
   transition: ease-in 0.3s;
+  text-indent: 25px;
+  background: url('person.png') no-repeat left #fff;
 }
 input:focus, textarea:focus, select:focus {
   outline: none;
