@@ -43,6 +43,7 @@ form {
   margin: 0 auto;
   background-color: #F7F7F7;
   max-width: 500px;
+  border-top: solid 5px #B8C4B6;
   box-shadow: 2px 2px 3px #000; }
 
 label {
