@@ -83,7 +83,7 @@ textarea {
   width: 100%;
   max-width: 100%; }
 
-/* styled radio box with background image instead of normal circles */
+/* styled radio buttons of car choice with background image instead of normal circles */
 .car-selector {
   width: auto;
   display: block; }
@@ -131,5 +131,62 @@ textarea {
   -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
   -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
   filter: brightness(1.2) grayscale(0.5) opacity(0.9); }
+
+/* styled radio buttons of emoticons with background image instead of normal circles */
+.face-selector {
+  display: block;
+  margin: 0 auto; }
+
+.face-selector input {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.amazing {
+  background: url("sad.png") red;
+  background-position: center;
+  color: transparent;
+  border-radius: 24px; }
+
+.sad {
+  background: url("sad.png") red;
+  background-position: center;
+  color: transparent;
+  border-radius: 24px; }
+
+.happy {
+  background: url("sad.png") red;
+  background-position: center;
+  color: transparent;
+  border-radius: 24px; }
+
+.face {
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: left;
+  margin: 0 5%;
+  width: 48px;
+  height: 48px;
+  transition: all 0.3s ease-in;
+  -webkit-filter: brightness(1.8) grayscale(1) opacity(0.7);
+  -moz-filter: brightness(1.8) grayscale(1) opacity(0.7);
+  filter: brightness(1.8) grayscale(1) opacity(0.7); }
+
+.face:hover {
+  -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
+  filter: brightness(1.2) grayscale(0.5) opacity(0.9); }
+
+.face-selector input:active + .face {
+  opacity: .9; }
+
+.face-selector input:checked + .face {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none; }
 
 /*# sourceMappingURL=styles.css.map */
