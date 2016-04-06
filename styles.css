@@ -189,4 +189,25 @@ textarea {
   -moz-filter: none;
   filter: none; }
 
+/* style submit button */
+button {
+  width: 90%;
+  padding: 9px 0px 9px 6px;
+  margin: 30px 5% 30px 5%;
+  border: solid 2px #D8DFDD;
+  font-size: 22px;
+  color: #D8DFDD;
+  background: transparent;
+  transition: ease-in 0.3s; }
+
+button:hover {
+  border: solid 2px red;
+  color: red;
+  cursor: pointer; }
+
+button:focus {
+  border: solid 2px red;
+  background: url("check.png") no-repeat center red;
+  color: transparent; }
+
 /*# sourceMappingURL=styles.css.map */
