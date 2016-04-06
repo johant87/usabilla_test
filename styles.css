@@ -55,7 +55,9 @@ textarea {
 select {
   padding: 12px 0px 12px 6px;
   border: none;
-  appearance: none; }
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
 
 select:focus {
   border-bottom: solid 3px #B8C4B6; }
