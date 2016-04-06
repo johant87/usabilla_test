@@ -80,6 +80,10 @@ input:focus, textarea:focus, select:focus {
   border-bottom: solid 3px $color-input;
 }
 
+input[type=radio]{
+  border-bottom:0;
+}
+
 textarea {
   border: none;
   border-bottom: solid 3px transparent;
@@ -101,4 +105,57 @@ select:focus {
 textarea {
   width: 100%;
   max-width: 100%;
+}
+
+/* styled radio box with background image instead of normal circles */
+.car-selector {
+  width: auto;
+  display:block;
+}
+
+.car-selector input {
+    margin:0;padding:0;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+}
+
+.mercedes{
+  background:url('audi.png') red;
+  background-position: center;
+  color: transparent;
+}
+.audi{
+  background:url('audi.png') red;
+  background-position: center;
+  color: transparent;
+}
+
+.car-selector input:active +.car{
+  opacity: .9;}
+.car-selector input:checked +.car{
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+}
+
+.car{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    float: left;
+    margin: 0 5%;
+    width: 40%;
+    height:120px;
+    transition: all 0.3s ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+    -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+    filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+
+.car:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
 }
