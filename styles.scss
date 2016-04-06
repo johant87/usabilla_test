@@ -38,6 +38,23 @@ $padding-input: 9px 0px 9px 6px;
 }
 
 /* Form styling */
+fieldset {
+    border: 0;
+}
+
+h4 {
+    font: $title-font;
+    font-size: 26px;
+    color: $color-header;
+    padding: 10px 0 0 5px;
+  }
+
+legend {
+  color: $color-header;
+  padding: 10px 0 0 5px;
+  font: $title-font;
+}
+
 form {
   margin: 0 auto;
   background-color: #F7F7F7;

@@ -25,6 +25,20 @@ body {
   border: red; }
 
 /* Form styling */
+fieldset {
+  border: 0; }
+
+h4 {
+  font: 300 36px/1.8 "Open Sans", sans-serif;
+  font-size: 26px;
+  color: red;
+  padding: 10px 0 0 5px; }
+
+legend {
+  color: red;
+  padding: 10px 0 0 5px;
+  font: 300 36px/1.8 "Open Sans", sans-serif; }
+
 form {
   margin: 0 auto;
   background-color: #F7F7F7;
