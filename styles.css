@@ -13,11 +13,55 @@ body {
   .col-100 input {
     width: 100%; }
 
+.col-select {
+  display: inline-block;
+  width: 90%;
+  background: url("arrow-down.png") no-repeat right #fff;
+  margin: 0 5% 0 5%; }
+  .col-select input {
+    width: 100%; }
+
+.col-select:focus {
+  border: red; }
+
 /* Form styling */
 form {
   margin: 0 auto;
   background-color: #F7F7F7;
   max-width: 500px;
   box-shadow: 2px 2px 3px #000; }
+
+label {
+  display: block; }
+
+input {
+  border: none;
+  padding: 9px 0px 9px 6px;
+  margin: 5px 1px 3px 0px;
+  display: block;
+  border-bottom: solid 3px transparent;
+  transition: ease-in 0.3s; }
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border: none;
+  border-bottom: solid 3px #B8C4B6; }
+
+textarea {
+  border: none;
+  border-bottom: solid 3px transparent;
+  transition: ease-in 0.3s; }
+
+select {
+  padding: 12px 0px 12px 6px;
+  border: none;
+  appearance: none; }
+
+select:focus {
+  border-bottom: solid 3px #B8C4B6; }
+
+textarea {
+  width: 100%;
+  max-width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
