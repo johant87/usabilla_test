@@ -7,3 +7,4 @@ A simple form built with CSS only(JavaScript was not allowed) with some creative
 * No JavaScript used except for preventing default button action for demo purposes only
 * SASS variables added
 * CSS styled in SASS file and preprocessed using Koala
+* Tested in Chrome
