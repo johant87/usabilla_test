@@ -6,3 +6,4 @@ A simple form built with CSS only with some creative use of background images to
 * All icons are from a single sprite
 * No JavaScript used except for preventing default button action for demo purposes only
 * SASS variables added
+* CSS styled in SASS file and preprocessed using Koala
