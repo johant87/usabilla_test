@@ -1,6 +1,6 @@
 # Usabilla Test
 
-A simple form built with CSS only with some creative use of background images to change radio buttons into interesting icons.
+A simple form built with CSS only(JavaScript was not allowed) with some creative use of background images to change radio buttons into interesting icons.
 
 * Changed radio buttons to image
 * All icons are from a single sprite
