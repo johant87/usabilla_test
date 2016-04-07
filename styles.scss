@@ -107,8 +107,10 @@ input[type=radio]{
 
 textarea {
   border: none;
+  margin: 5px 0 0 0;
   border-bottom: solid 3px transparent;
   transition: ease-in 0.3s;
+  font-family: 'Open Sans', sans-serif;
 }
 
 select {
@@ -126,6 +128,13 @@ select:focus {
 textarea {
   width: 100%;
   max-width: 100%;
+}
+
+/* remove autofill yellow background */
+input:-webkit-autofill {
+ box-shadow: 0 0 0px 1000px #fff inset;
+ border-bottom: solid 3px $color-input;
+ text-indent: 0;
 }
 
 /* styled radio buttons of car choice with background image instead of normal circles */
@@ -255,26 +264,31 @@ textarea {
 }
 
 /* style submit button */
-button {
+.btn {
   width: 90%;
   padding: $padding-input;
   margin: 30px 5% 30px 5%;
-  border: solid 2px #D8DFDD;
+  border: solid 2px #6b6b6b;
   font-size: 22px;
-  color: #D8DFDD;
+  color: #6b6b6b;
   background: transparent;
 }
 
-button:hover {
+.btn:hover {
   border: solid 2px $color-header;
   color: red;
   cursor: pointer;
 }
 
-button:focus {
+.btn:focus {
   border: solid 2px $color-header;
   background: $images $color-header;
-  background-position: 0 -127px;
-  color: $color-header;
-  text-indent: -9999
+  background-position: 60% -127px;
+  color: transparent;
+  text-indent: -9999;
+  right: 0;
+}
+
+.done {
+
 }

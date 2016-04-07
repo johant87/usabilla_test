@@ -83,8 +83,10 @@ input[type=radio] {
 
 textarea {
   border: none;
+  margin: 5px 0 0 0;
   border-bottom: solid 3px transparent;
-  transition: ease-in 0.3s; }
+  transition: ease-in 0.3s;
+  font-family: 'Open Sans', sans-serif; }
 
 select {
   padding: 12px 0px 12px 6px;
@@ -99,6 +101,12 @@ select:focus {
 textarea {
   width: 100%;
   max-width: 100%; }
+
+/* remove autofill yellow background */
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #fff inset;
+  border-bottom: solid 3px #CC3D49;
+  text-indent: 0; }
 
 /* styled radio buttons of car choice with background image instead of normal circles */
 .car-selector {
@@ -218,25 +226,26 @@ textarea {
   filter: none; }
 
 /* style submit button */
-button {
+.btn {
   width: 90%;
   padding: 9px 0px 9px 6px;
   margin: 30px 5% 30px 5%;
-  border: solid 2px #D8DFDD;
+  border: solid 2px #6b6b6b;
   font-size: 22px;
-  color: #D8DFDD;
+  color: #6b6b6b;
   background: transparent; }
 
-button:hover {
+.btn:hover {
   border: solid 2px #CC3D49;
   color: red;
   cursor: pointer; }
 
-button:focus {
+.btn:focus {
   border: solid 2px #CC3D49;
   background: url("images.png") no-repeat top left #CC3D49;
-  background-position: 0 -127px;
-  color: #CC3D49;
-  text-indent: -9999; }
+  background-position: 60% -127px;
+  color: transparent;
+  text-indent: -9999;
+  right: 0; }
 
 /*# sourceMappingURL=styles.css.map */
