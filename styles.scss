@@ -1,53 +1,30 @@
+/*import fonts from google*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url(https://fonts.googleapis.com/css?family=Oswald:300);
+
+/*Set basic body style*/
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #335464;
 
 }
-
 /*set some SASS variables to use in form style*/
+/*font style*/
 $title-font: 300 36px/1.8 'Open Sans', sans-serif;
 $title-font-oswald: 300 36px/1.4 'Oswald', sans-serif;
+/*basic row style for form elements*/
 $margin-rows: 15px 0 15px 0;
 $padding-rows: 0 5% 0 5%;
 $margin-select: 0 5% 0 5%;
+/*basic color used for input and headers*/
 $color-input: #CC3D49;
 $color-header: #CC3D49;
+/*padding for input*/
 $padding-input: 9px 0px 9px 6px;
+/*Single image sprite for all icons*/
 $images: url('images.png') no-repeat top left;
 
-/* Add some layout, position elements correctly on screen */
-.col-100 {
-  display: inline-block;
-  width: 90%;
-  margin: $margin-rows;
-  padding: $padding-rows;
-  input {
-    width: 100%;
-  }
-}
-
-.col-select {
-  display: inline-block;
-  width: 90%;
-  background: $images #fff;
-  text-indent: 25px;
-  background-position: 0 -27px;
-  margin: $margin-select;
-  input {
-    width: 100%;
-  }
-}
-.col-select:focus {
-  border: red;
-}
-
-/* Form styling */
-fieldset {
-    border: 0;
-}
-
+/*default header style*/
 h4 {
     font: $title-font-oswald;
     font-size: 26px;
@@ -55,240 +32,35 @@ h4 {
     padding: 10px 0 0 5px;
   }
 
-legend {
-  color: $color-header;
-  padding: 10px 0 0 5px;
-  font: $title-font-oswald;
-}
+  /* style submit button */
+  .btn {
+    width: 90%;
+    padding: $padding-input;
+    margin: 30px 5% 30px 5%;
+    border: solid 2px #6b6b6b;
+    font-size: 22px;
+    color: #6b6b6b;
+    background: transparent;
+  }
 
-form {
-  margin: 0 auto;
-  background-color: #f5f5f5;
-  max-width: 500px;
-  border-top: solid 5px #CC3D49;
-  box-shadow: 2px 2px 3px #000 ;
-}
+  .btn:hover {
+    border: solid 2px $color-header;
+    color: red;
+    cursor: pointer;
+  }
 
-label {
-  display: block;
-}
+  .btn:focus {
+    border: solid 2px $color-header;
+    background: $images $color-header;
+    background-position: 60% -127px;
+    color: transparent;
+    text-indent: -9999;
+    right: 0;
+  }
 
-input{
-  border: none;
-  padding: $padding-input;
-  margin: 5px 1px 3px 0px;
-  display: block;
-  border-bottom: solid 3px transparent;
-  transition: ease-in 0.3s;
-  text-indent: 25px;
-}
-
-.name-icon {
-  background: $images #fff;
-  background-position: 0 5px;
-}
-.mail-icon {
-  background: $images #fff;
-  background-position: 0 -61px;
-}
-.phone-icon {
-  background: $images #fff;
-  background-position: 0 -95px;
-}
-input:focus, textarea:focus, select:focus {
-  outline: none;
-  border: none;
-  border-bottom: solid 3px $color-input;
-}
-
-input[type=radio]{
-  border-bottom:0;
-}
-
-textarea {
-  border: none;
-  margin: 5px 0 0 0;
-  border-bottom: solid 3px transparent;
-  transition: ease-in 0.3s;
-  font-family: 'Open Sans', sans-serif;
-}
-
-select {
-  padding: 12px 0px 12px 6px;
-  border: none;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-select:focus {
-  border-bottom: solid 3px $color-input;
-}
-
-textarea {
-  width: 100%;
-  max-width: 100%;
-}
-
-/* remove autofill yellow background */
-input:-webkit-autofill {
- box-shadow: 0 0 0px 1000px #fff inset;
- border-bottom: solid 3px $color-input;
- text-indent: 0;
-}
-
-/* styled radio buttons of car choice with background image instead of normal circles */
-.car-selector {
-  width: auto;
-  display:block;
-}
-
-.car-selector input {
-    margin:0;padding:0;
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
-}
-
-.mercedes{
-  color: transparent;
-  background: $images red;
-  background-position: 0 -170px;
-  width: 100px;
-  text-indent: -9999px;
-  height: 100px;
-}
-.audi{
-  background: $images red;
-  background-position: 0 -275px;
-  width: 100px;
-  height: 100px;
-  text-indent: -9999px;
-  color: transparent;
-}
-
-.car-selector input:active +.car{
-  opacity: .9;}
-.car-selector input:checked +.car{
-    -webkit-filter: none;
-    -moz-filter: none;
-    filter: none;
-}
-
-.car{
-    cursor:pointer;
-    display:inline-block;
-    float: left;
-    margin: 0 3%;
-    width: 100px;
-    height:100px;
-    transition: all 0.3s ease-in;
-    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-    -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-    filter: brightness(1.8) grayscale(1) opacity(.7);
-}
-
-.car:hover{
-    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
-    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
-    filter: brightness(1.2) grayscale(.5) opacity(.9);
-}
-/* styled radio buttons of emoticons with background image instead of normal circles */
-.face-selector {
-  display:block;
-  margin: 0 auto;
-}
-
-.face-selector input {
-    margin:0;padding:0;
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
-}
-
-.amazing{
-  color: transparent;
-  background: $images red;
-  background-position: 0 -390px;
-  width: 48px;
-  text-indent: -9999px;
-  height: 48px;
-  border-radius: 24px;
-}
-
-.happy{
-  color: transparent;
-  background: $images red;
-  background-position: 0 -447px;
-  width: 48px;
-  height: 48px;
-  text-indent: -9999px;
-  border-radius: 24px;
-}
-
-.sad{
-  color: transparent;
-  background: $images red;
-  background-position: 0 -506px;
-  width: 48px;
-  height: 48px;
-  text-indent: -9999px;
-  border-radius: 24px;
-}
-
-.face{
-    cursor:pointer;
-    display:inline-block;
-    float: left;
-    margin: 0 5%;
-    width: 48px;
-    height:48px;
-    transition: all 0.3s ease-in;
-    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-    -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-    filter: brightness(1.8) grayscale(1) opacity(.7);
-}
-
-.face:hover{
-    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
-    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
-    filter: brightness(1.2) grayscale(.5) opacity(.9);
-}
-
-.face-selector input:active +.face{
-  opacity: .9;}
-.face-selector input:checked +.face{
-    -webkit-filter: none;
-    -moz-filter: none;
-    filter: none;
-}
-
-/* style submit button */
-.btn {
-  width: 90%;
-  padding: $padding-input;
-  margin: 30px 5% 30px 5%;
-  border: solid 2px #6b6b6b;
-  font-size: 22px;
-  color: #6b6b6b;
-  background: transparent;
-}
-
-.btn:hover {
-  border: solid 2px $color-header;
-  color: red;
-  cursor: pointer;
-}
-
-.btn:focus {
-  border: solid 2px $color-header;
-  background: $images $color-header;
-  background-position: 60% -127px;
-  color: transparent;
-  text-indent: -9999;
-  right: 0;
-}
-
-.done {
-
-}
+/* Add some layout, position elements correctly on screen */
+@import "layout";
+/*Basic form styling */
+@import "form";
+/*custom radio buttons with background image */
+@import "custom-radio-btn";
