@@ -14,8 +14,9 @@ body {
 /*Single image sprite for all icons*/
 /*default header style*/
 h4 {
-  font: 300 36px/1.4 "Oswald", sans-serif;
-  font-size: 27px;
+  font: 300 36px "Oswald", sans-serif;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 20px;
   color: #CC3D49;
   padding: 10px 0 0 5px; }
 
@@ -46,10 +47,12 @@ h4 {
 .col-100 {
   display: inline-block;
   width: 90%;
-  margin: 15px 0 15px 0;
-  padding: 0 5% 0 5%; }
+  margin: 15px 5% 15px 5%; }
   .col-100 input {
     width: 100%; }
+
+.title-select {
+  margin-bottom: 5px; }
 
 .col-select {
   display: inline-block;
@@ -58,8 +61,6 @@ h4 {
   text-indent: 25px;
   background-position: 5px -25px;
   margin: 0 5% 0 5%; }
-  .col-select input {
-    width: 100%; }
 
 .col-select:focus {
   border: red; }
@@ -72,7 +73,7 @@ fieldset {
 legend {
   color: #CC3D49;
   padding: 10px 0 0 5px;
-  font: 300 36px/1.4 "Oswald", sans-serif; }
+  font: 300 36px "Oswald", sans-serif; }
 
 form {
   margin: 0 auto;
@@ -157,14 +158,15 @@ input:-webkit-autofill {
 .mercedes {
   color: transparent;
   background: url("images.png") no-repeat top left red;
-  background-position: 0 -280px;
+  background-position: 50% -270px;
   width: 100px;
+  margin: 0 5% 0 5%;
   text-indent: -9999px;
   height: 100px; }
 
 .audi {
   background: url("images.png") no-repeat top left red;
-  background-position: 0 -170px;
+  background-position: 50% -160px;
   width: 100px;
   height: 100px;
   text-indent: -9999px;
@@ -178,13 +180,15 @@ input:-webkit-autofill {
   -moz-filter: none;
   filter: none; }
 
+.title-car {
+  margin-bottom: 15px; }
+
 .car {
   cursor: pointer;
   display: inline-block;
   float: left;
-  margin: 0 3%;
-  width: 100px;
-  height: 100px;
+  width: 42%;
+  height: 120px;
   transition: all 0.3s ease-in;
   -webkit-filter: brightness(1.8) grayscale(1) opacity(0.7);
   -moz-filter: brightness(1.8) grayscale(1) opacity(0.7);

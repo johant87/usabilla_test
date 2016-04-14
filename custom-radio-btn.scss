@@ -14,14 +14,15 @@
 .mercedes{
   color: transparent;
   background: $images red;
-  background-position: 0 -280px;
+  background-position: 50% -270px;
   width: 100px;
+  margin: 0 5% 0 5%;
   text-indent: -9999px;
   height: 100px;
 }
 .audi{
   background: $images red;
-  background-position: 0 -170px;
+  background-position: 50% -160px;
   width: 100px;
   height: 100px;
   text-indent: -9999px;
@@ -35,14 +36,15 @@
     -moz-filter: none;
     filter: none;
 }
-
+.title-car {
+  margin-bottom: 15px;
+}
 .car{
     cursor:pointer;
     display:inline-block;
     float: left;
-    margin: 0 3%;
-    width: 100px;
-    height:100px;
+    width: 42%;
+    height:120px;
     transition: all 0.3s ease-in;
     -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
     -moz-filter: brightness(1.8) grayscale(1) opacity(.7);

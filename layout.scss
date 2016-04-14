@@ -2,10 +2,14 @@
   display: inline-block;
   width: 90%;
   margin: $margin-rows;
-  padding: $padding-rows;
+  // padding: $padding-rows;
   input {
     width: 100%;
   }
+}
+
+.title-select{
+  margin-bottom: 5px;
 }
 
 .col-select {
@@ -16,7 +20,7 @@
   background-position: 5px -25px;
   margin: $margin-select;
   input {
-    width: 100%;
+    // width: 100%;
   }
 }
 .col-select:focus {

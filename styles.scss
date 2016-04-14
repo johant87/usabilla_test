@@ -11,9 +11,9 @@ body {
 /*set some SASS variables to use in form style*/
 /*font style*/
 $title-font: 300 36px/1.8 'Open Sans', sans-serif;
-$title-font-oswald: 300 36px/1.4 'Oswald', sans-serif;
+$title-font-oswald: 300 36px 'Oswald', sans-serif;
 /*basic row style for form elements*/
-$margin-rows: 15px 0 15px 0;
+$margin-rows: 15px 5% 15px 5%;
 $padding-rows: 0 5% 0 5%;
 $margin-select: 0 5% 0 5%;
 /*basic color used for input and headers*/
@@ -23,11 +23,16 @@ $color-header: #CC3D49;
 $padding-input: 9px 0px 9px 6px;
 /*Single image sprite for all icons*/
 $images: url('images.png') no-repeat top left;
-
+@mixin centerer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
 /*default header style*/
 h4 {
     font: $title-font-oswald;
-    font-size: 27px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 20px;
     color: $color-header;
     padding: 10px 0 0 5px;
   }
