@@ -15,7 +15,7 @@ body {
 /*default header style*/
 h4 {
   font: 300 36px/1.4 "Oswald", sans-serif;
-  font-size: 26px;
+  font-size: 27px;
   color: #CC3D49;
   padding: 10px 0 0 5px; }
 
@@ -56,7 +56,7 @@ h4 {
   width: 90%;
   background: url("images.png") no-repeat top left #fff;
   text-indent: 25px;
-  background-position: 0 -27px;
+  background-position: 5px -25px;
   margin: 0 5% 0 5%; }
   .col-select input {
     width: 100%; }
@@ -76,9 +76,9 @@ legend {
 
 form {
   margin: 0 auto;
+  width: 500px;
   background-color: #f5f5f5;
   background-color: rgba(245, 245, 245, 0.95);
-  max-width: 500px;
   border-top: solid 5px #CC3D49;
   box-shadow: 2px 2px 3px #000; }
 
@@ -92,19 +92,19 @@ input {
   display: block;
   border-bottom: solid 3px transparent;
   transition: ease-in 0.3s;
-  text-indent: 25px; }
+  text-indent: 30px; }
 
 .name-icon {
   background: url("images.png") no-repeat top left #fff;
-  background-position: 0 5px; }
+  background-position: 5px 5px; }
 
 .mail-icon {
   background: url("images.png") no-repeat top left #fff;
-  background-position: 0 -61px; }
+  background-position: 5px -62px; }
 
 .phone-icon {
   background: url("images.png") no-repeat top left #fff;
-  background-position: 0 -95px; }
+  background-position: 5px -95px; }
 
 input:focus, textarea:focus, select:focus {
   outline: none;
@@ -157,14 +157,14 @@ input:-webkit-autofill {
 .mercedes {
   color: transparent;
   background: url("images.png") no-repeat top left red;
-  background-position: 0 -170px;
+  background-position: 0 -280px;
   width: 100px;
   text-indent: -9999px;
   height: 100px; }
 
 .audi {
   background: url("images.png") no-repeat top left red;
-  background-position: 0 -275px;
+  background-position: 0 -170px;
   width: 100px;
   height: 100px;
   text-indent: -9999px;
@@ -219,7 +219,7 @@ input:-webkit-autofill {
 .happy {
   color: transparent;
   background: url("images.png") no-repeat top left red;
-  background-position: 0 -447px;
+  background-position: 0 -448px;
   width: 48px;
   height: 48px;
   text-indent: -9999px;

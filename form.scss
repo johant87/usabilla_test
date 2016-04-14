@@ -11,9 +11,9 @@ legend {
 
 form {
   margin: 0 auto;
+  width: 500px;
   background-color: #f5f5f5;
   background-color: rgba(245, 245, 245, 0.95);
-  max-width: 500px;
   border-top: solid 5px #CC3D49;
   box-shadow: 2px 2px 3px #000 ;
 }
@@ -29,20 +29,20 @@ input{
   display: block;
   border-bottom: solid 3px transparent;
   transition: ease-in 0.3s;
-  text-indent: 25px;
+  text-indent: 30px;
 }
 
 .name-icon {
   background: $images #fff;
-  background-position: 0 5px;
+  background-position: 5px 5px;
 }
 .mail-icon {
   background: $images #fff;
-  background-position: 0 -61px;
+  background-position: 5px -62px;
 }
 .phone-icon {
   background: $images #fff;
-  background-position: 0 -95px;
+  background-position: 5px -95px;
 }
 input:focus, textarea:focus, select:focus {
   outline: none;
