@@ -10,23 +10,23 @@
       <fieldset>
         <legend>Personal details</legend>
 
-        <div class="col-100">
+        <div>
           <label for="name">Your name:</label>
           <input type="text" name="name" id="name" class="name-icon">
         </div>
 
-        <div class="col-100">
+        <div>
           <label for="email">Your email address:</label>
           <input type="email" id="email" name="email" class="mail-icon">
         </div>
 
-        <div class="col-100">
+        <div>
           <label for="phoneNumber">Your telephone number:</label>
           <input type="text" name="phoneNumber" id="phoneNumber"  class="phone-icon">
         </div>
 
-        <label for="select-choice" class="col-100 title-select">Where are you from?</label>
-        <select name="select-choice" id="select-choice" class="col-select">
+        <label for="select-choice">Where are you from?</label>
+        <select name="select-choice" id="select-choice">
           <option value="england">England</option>
           <option value="spain">Spain</option>
           <option value="france">France</option>
@@ -35,20 +35,20 @@
       </fieldset>
 
       <fieldset class="car-selector">
-         <legend class="title-car">Which do you like?</legend>
+         <legend>Which do you like?</legend>
 
-         <input type="radio" name="likes" id="checkbox1" value="checkbox1">
-         <label for="checkbox1" class="car mercedes">Mercedes</label>
+         <label for="checkbox1">Mercedes</label>
+         <input type="radio" name="likes" id="checkbox1" class="mercedes" value="checkbox1">
 
-         <input type="radio" name="likes" id="checkbox2" value="checkbox2">
-         <label for="checkbox2" class="car audi">Audi</label>
+         <label for="checkbox2">Audi</label>
+         <input type="radio" name="likes" id="checkbox2" class="audi" value="checkbox2">
 
       </fieldset>
 
     <fieldset>
       <legend>Feedback</legend>
 
-      <div class="col-100">
+      <div>
           <label for="textarea">Enter your feedback:</label>
           <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
       </div>
@@ -56,12 +56,12 @@
       <h4>How does our product make you feel?</h4>
 
       <div class="face-selector">
+        <label for="radiobutton1" class="amazing">Amazing</label>
         <input type="radio" name="happiness" id="radiobutton1" />
-        <label for="radiobutton1" class="face amazing">Amazing</label>
+        <label for="radiobutton2" class="happy">Happy</label>
         <input type="radio" name="happiness" id="radiobutton2" />
-        <label for="radiobutton2" class="face happy">Happy</label>
+        <label for="radiobutton3" class="sad">Sad</label>
         <input type="radio" name="happiness" id="radiobutton3" />
-        <label for="radiobutton3" class="face sad">Sad</label>
       </div>
     </fieldset>
 

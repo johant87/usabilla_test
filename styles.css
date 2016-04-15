@@ -1,266 +1,171 @@
 /*import fonts from google*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url(https://fonts.googleapis.com/css?family=Oswald:300);
-/*Set basic body style*/
-body {
+body, input, textarea, select {
   font-family: 'Open Sans', sans-serif;
-  background-color: #335464; }
+  color: #CC3D49; }
+  body h4, input h4, textarea h4, select h4 {
+    font-size: 24px;
+    color: #CC3D49;
+    text-align: center; }
 
-/*set some SASS variables to use in form style*/
-/*font style*/
-/*basic row style for form elements*/
-/*basic color used for input and headers*/
-/*padding for input*/
-/*Single image sprite for all icons*/
-/*default header style*/
 h4 {
-  font: 300 36px "Oswald", sans-serif;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 20px;
-  color: #CC3D49;
-  padding: 10px 0 0 5px; }
-
-/* style submit button */
-.btn {
-  width: 90%;
-  padding: 9px 0px 9px 6px;
-  margin: 30px 5% 30px 5%;
-  border: solid 2px #6b6b6b;
-  font-size: 22px;
-  color: #6b6b6b;
-  background: transparent; }
-
-.btn:hover {
-  border: solid 2px #CC3D49;
-  color: red;
-  cursor: pointer; }
-
-.btn:focus {
-  border: solid 2px #CC3D49;
-  background: url("images.png") no-repeat top left #CC3D49;
-  background-position: 60% -127px;
-  color: transparent;
-  text-indent: -9999;
-  right: 0; }
-
-/* Add some layout, position elements correctly on screen */
-.col-100 {
-  display: inline-block;
-  width: 90%;
-  margin: 15px 5% 15px 5%; }
-  .col-100 input {
-    width: 100%; }
-
-.title-select {
-  margin-bottom: 5px; }
-
-.col-select {
-  display: inline-block;
-  width: 90%;
-  background: url("images.png") no-repeat top left #fff;
-  text-indent: 25px;
-  background-position: 5px -25px;
-  margin: 0 5% 0 5%; }
-
-.col-select:focus {
-  border: red; }
-
-/*Basic form styling */
-/* Form styling */
-fieldset {
-  border: 0; }
-
-legend {
-  color: #CC3D49;
-  padding: 10px 0 0 5px;
-  font: 300 36px "Oswald", sans-serif; }
-
-form {
-  margin: 0 auto;
-  width: 500px;
-  background-color: #f5f5f5;
-  background-color: rgba(245, 245, 245, 0.95);
-  border-top: solid 5px #CC3D49;
-  box-shadow: 2px 2px 3px #000; }
-
-label {
-  display: block; }
-
-input {
-  border: none;
-  padding: 9px 0px 9px 6px;
-  margin: 5px 1px 3px 0px;
-  display: block;
-  border-bottom: solid 3px transparent;
-  transition: ease-in 0.3s;
-  text-indent: 30px; }
-
-.name-icon {
-  background: url("images.png") no-repeat top left #fff;
-  background-position: 5px 5px; }
-
-.mail-icon {
-  background: url("images.png") no-repeat top left #fff;
-  background-position: 5px -62px; }
-
-.phone-icon {
-  background: url("images.png") no-repeat top left #fff;
-  background-position: 5px -95px; }
+  font-size: 24px; }
 
 input:focus, textarea:focus, select:focus {
   outline: none;
-  border: none;
   border-bottom: solid 3px #CC3D49; }
 
-input[type=radio] {
-  border-bottom: 0; }
-
-textarea {
-  border: none;
-  margin: 5px 0 0 0;
-  border-bottom: solid 3px transparent;
-  transition: ease-in 0.3s;
-  font-family: 'Open Sans', sans-serif; }
-
-select {
-  padding: 12px 0px 12px 6px;
-  border: none;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none; }
-
-select:focus {
-  border-bottom: solid 3px #CC3D49; }
-
-textarea {
-  width: 100%;
-  max-width: 100%; }
+input[type="radio"] {
+  border-bottom: none; }
+  input[type="radio"]:hover {
+    border-bottom: none; }
 
 /* remove autofill yellow background */
 input:-webkit-autofill {
   box-shadow: 0 0 0px 1000px #fff inset;
   border-bottom: solid 3px #CC3D49;
-  text-indent: 0; }
+  text-indent: 10px; }
 
-/*custom radio buttons with background image */
-/* styled radio buttons of car choice with background image instead of normal circles */
-.car-selector {
-  width: auto;
-  display: block; }
+textarea {
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-before: 0;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+  -webkit-padding-after: 0;
+  padding: 0; }
 
-.car-selector input {
-  margin: 0;
-  padding: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
-
-.mercedes {
-  color: transparent;
-  background: url("images.png") no-repeat top left red;
-  background-position: 50% -270px;
-  width: 100px;
-  margin: 0 5% 0 5%;
-  text-indent: -9999px;
-  height: 100px; }
-
-.audi {
-  background: url("images.png") no-repeat top left red;
-  background-position: 50% -160px;
-  width: 100px;
-  height: 100px;
-  text-indent: -9999px;
-  color: transparent; }
-
-.car-selector input:active + .car {
-  opacity: .9; }
-
-.car-selector input:checked + .car {
-  -webkit-filter: none;
-  -moz-filter: none;
-  filter: none; }
-
-.title-car {
-  margin-bottom: 15px; }
-
-.car {
-  cursor: pointer;
-  display: inline-block;
-  float: left;
-  width: 42%;
-  height: 120px;
-  transition: all 0.3s ease-in;
-  -webkit-filter: brightness(1.8) grayscale(1) opacity(0.7);
-  -moz-filter: brightness(1.8) grayscale(1) opacity(0.7);
-  filter: brightness(1.8) grayscale(1) opacity(0.7); }
-
-.car:hover {
-  -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
-  -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
-  filter: brightness(1.2) grayscale(0.5) opacity(0.9); }
-
-/* styled radio buttons of emoticons with background image instead of normal circles */
-.face-selector {
-  display: block;
-  margin: 0 auto; }
-
-.face-selector input {
-  margin: 0;
-  padding: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
-
-.amazing {
-  color: transparent;
-  background: url("images.png") no-repeat top left red;
-  background-position: 0 -390px;
-  width: 48px;
-  text-indent: -9999px;
-  height: 48px;
-  border-radius: 24px; }
-
-.happy {
-  color: transparent;
-  background: url("images.png") no-repeat top left red;
-  background-position: 0 -448px;
-  width: 48px;
-  height: 48px;
-  text-indent: -9999px;
-  border-radius: 24px; }
-
-.sad {
-  color: transparent;
-  background: url("images.png") no-repeat top left red;
-  background-position: 0 -506px;
-  width: 48px;
-  height: 48px;
-  text-indent: -9999px;
-  border-radius: 24px; }
-
-.face {
-  cursor: pointer;
-  display: inline-block;
-  float: left;
-  margin: 0 5%;
-  width: 48px;
-  height: 48px;
-  transition: all 0.3s ease-in;
-  -webkit-filter: brightness(1.8) grayscale(1) opacity(0.7);
-  -moz-filter: brightness(1.8) grayscale(1) opacity(0.7);
-  filter: brightness(1.8) grayscale(1) opacity(0.7); }
-
-.face:hover {
-  -webkit-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
-  -moz-filter: brightness(1.2) grayscale(0.5) opacity(0.9);
-  filter: brightness(1.2) grayscale(0.5) opacity(0.9); }
-
-.face-selector input:active + .face {
-  opacity: .9; }
-
-.face-selector input:checked + .face {
-  -webkit-filter: none;
-  -moz-filter: none;
-  filter: none; }
+body {
+  background-color: #335464;
+  color: black; }
+  body form {
+    margin: 0 auto;
+    padding: 25px 0px;
+    width: 500px;
+    background-color: #f5f5f5;
+    background-color: rgba(245, 245, 245, 0.95);
+    border-top: solid 5px #CC3D49;
+    box-shadow: 2px 2px 3px #000; }
+    body form fieldset {
+      border: 0;
+      width: 450px;
+      padding: 25px; }
+      body form fieldset legend {
+        color: #CC3D49;
+        text-align: center;
+        border-bottom: solid 3px #CC3D49;
+        width: 100%;
+        padding: 10px 0 0 0;
+        font: 300 36px 'Oswald', sans-serif; }
+    body form input {
+      border: none;
+      padding: 10px 0;
+      margin: 10px 0;
+      width: 100%;
+      transition: ease-in 0.3s;
+      text-indent: 35px;
+      border-bottom: solid 3px transparent; }
+      body form input.name-icon {
+        background: url("images.png") no-repeat top left #fff;
+        background-position: 5px 8px; }
+      body form input.mail-icon {
+        background: url("images.png") no-repeat top left #fff;
+        background-position: 5px -59px; }
+      body form input.phone-icon {
+        background: url("images.png") no-repeat top left #fff;
+        background-position: 5px -92px; }
+    body form select {
+      padding: 10px 0px 10px 6px;
+      width: 100%;
+      margin-top: 10px;
+      border: none;
+      text-indent: 30px;
+      transition: ease-in 0.3s;
+      background: url("images.png") no-repeat top left #fff;
+      background-position: 5px -25px;
+      border-bottom: solid 3px grey;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+    body form .car-selector label {
+      color: white;
+      display: none; }
+      body form .car-selector label + input {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 200px;
+        margin: 10px 10px;
+        height: 120px; }
+        body form .car-selector label + input:focus {
+          outline: none; }
+        body form .car-selector label + input.audi {
+          background: url("images.png") no-repeat top left #6c6d6d;
+          background-position: 50% -160px; }
+          body form .car-selector label + input.audi:hover {
+            background-color: #CC3D49;
+            cursor: pointer; }
+          body form .car-selector label + input.audi:checked {
+            background-color: #e8535f; }
+        body form .car-selector label + input.mercedes {
+          background: url("images.png") no-repeat top left #6c6d6d;
+          background-position: 50% -270px; }
+          body form .car-selector label + input.mercedes:hover {
+            background-color: #CC3D49;
+            cursor: pointer; }
+          body form .car-selector label + input.mercedes:checked {
+            background-color: #e8535f; }
+    body form textarea {
+      border: solid 3px transparent;
+      width: 100%;
+      margin-top: 10px;
+      transition: ease-in 0.3s;
+      font-family: 'Open Sans', sans-serif; }
+    body form .face-selector label {
+      color: white;
+      display: none; }
+      body form .face-selector label.amazing + input {
+        margin-left: 101px;
+        background: url("images.png") no-repeat top left #6c6d6d;
+        background-position: 0 -390px; }
+      body form .face-selector label.happy + input {
+        background: url("images.png") no-repeat top left #6c6d6d;
+        background-position: 0 -448px; }
+      body form .face-selector label.sad + input {
+        background: url("images.png") no-repeat top left #6c6d6d;
+        background-position: 0 -506px; }
+      body form .face-selector label + input {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 48px;
+        margin: 10px 25px;
+        height: 48px;
+        border-radius: 24px;
+        cursor: pointer; }
+        body form .face-selector label + input:hover {
+          background-color: #CC3D49; }
+        body form .face-selector label + input:checked {
+          background-color: #e8535f; }
+    body form .btn {
+      width: 450px;
+      margin: 0 25px;
+      padding: 10px 0;
+      text-align: center;
+      border: solid 3px #6b6b6b;
+      font-size: 26px;
+      color: #6b6b6b;
+      cursor: pointer;
+      background: transparent; }
+      body form .btn:hover {
+        border: solid 3px #CC3D49;
+        color: #CC3D49; }
+      body form .btn:focus {
+        background: url("images.png") no-repeat top left #6c6d6d;
+        background-position: 213px -123px;
+        color: transparent;
+        text-indent: -9999;
+        right: 0; }
 
 /*# sourceMappingURL=styles.css.map */
